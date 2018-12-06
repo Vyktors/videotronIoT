@@ -12,4 +12,4 @@ Projet personnel servant à afficher les données de consommation internet reli�
 2. Installer les modules
     * lxml `python -m pip install lxml` dans une ligne de commandes
      
-
+### W.I.P
