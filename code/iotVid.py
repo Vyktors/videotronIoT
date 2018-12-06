@@ -21,7 +21,6 @@ class Data:
         self.moyenneJour = 0
         self.forfaitTot = forfaitVideotron
 
-        
     def get(self, dom):
         usage = dom.getElementsByTagName('usage')[0]
         if usage.getElementsByTagName('download').length == 0:
@@ -44,6 +43,7 @@ class Data:
                 self.deltaDay = int(dayTo - dayFrom + 30)
 
             self.moyenneJour = float(self.utilisationTot/self.deltaDay)
+            
     def printData(self):
         print('Donnees:')
         print('Telechargement: %s MB' % self.download)
